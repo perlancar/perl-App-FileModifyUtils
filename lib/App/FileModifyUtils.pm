@@ -45,7 +45,7 @@ _
         {
             summary => 'Add .DS_Store to .gitignore for several repositories',
             src => 'for repo in perl-*;do cd $repo; add-line-to-file .gitignore .DS_Store && git commit -m "Add .DS_Store to .gitignore" .gitignore; cd ..; done',
-            src_plan => 'bash',
+            src_plang => 'bash',
             test => 0,
             'x.doc.show_result' => 0,
         },
