@@ -21,7 +21,7 @@ $SPEC{add_line_to_file} = {
     description => <<'_',
 
 Uses <pm:Setup::File::Line> which supports undo, but the undo feature is not
-used. See L<pm:App::FileModifyUtils::Undoable> for file-modifying CLIs which
+used. See <pm:App::FileModifyUtils::Undoable> for file-modifying CLIs which
 support undo.
 
 _
@@ -60,7 +60,7 @@ $SPEC{remove_line_from_file} = {
     description => <<'_',
 
 Uses <pm:Setup::File::Line> which supports undo, but the undo feature is not
-used. See L<pm:App::FileModifyUtils::Undoable> for file-modifying CLIs which
+used. See <pm:App::FileModifyUtils::Undoable> for file-modifying CLIs which
 support undo.
 
 _
