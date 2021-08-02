@@ -45,7 +45,7 @@ _
 sub add_line_to_file {
     require Setup::File::Line;
     my %args = @_;
-    Setup::File::Line::setup_line(
+    Setup::File::Line::setup_file_line(
         -tx_action => 'fix_state',
         -tx_action_id => rand(),
         path => $args{file},
@@ -80,15 +80,16 @@ _
         },
     },
 };
-sub add_line_to_file {
+sub remove_line_from_file {
     require Setup::File::Line;
     my %args = @_;
-    Setup::File::Line::setup_line(
+    Setup::File::Line::setup_file_line(
         -tx_action => 'fix_state',
         -tx_action_id => rand(),
+        should_exist => 0,
         path => $args{file},
         line_content => $args{line},
-        case_insensitive => $args{top_style},
+        case_insensitive => $args{case_insensitive},
     );
 }
 
